@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ようこそ YouTube PWA インストーラーへ</title>
+    <style>
+        /* 90年代〜2000年代初頭の「懐かしい」スタイル */
+        body {
+            background-color: #c0c0c0; /* クラシックなグレー */
+            color: #000000;
+            font-family: "MS UI Gothic", "Osaka", sans-serif;
+            margin: 20px;
+        }
+
+        header {
+            border-bottom: 2px solid #808080;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+        }
+
+        h1 {
+            color: #000080; /* ネイビーブルー */
+            font-size: 24px;
+            text-decoration: underline;
+        }
+
+        .container {
+            background-color: #ffffff;
+            border: 2px inset #ffffff;
+            padding: 15px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .marquee-box {
+            background-color: #000000;
+            color: #00ff00; /* 蛍光グリーン */
+            padding: 5px;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .description {
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        /* 旧世代風ボタンのデザイン */
+        .install-button {
+            display: inline-block;
+            background-color: #d0d0d0;
+            border-top: 2px solid #ffffff;
+            border-left: 2px solid #ffffff;
+            border-right: 2px solid #808080;
+            border-bottom: 2px solid #808080;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .install-button:active {
+            border-top: 2px solid #808080;
+            border-left: 2px solid #808080;
+            border-right: 2px solid #ffffff;
+            border-bottom: 2px solid #ffffff;
+            padding: 11px 19px 9px 21px; /* 押し込まれた演出 */
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 12px;
+            text-align: center;
+            border-top: 1px double #808080;
+            padding-top: 10px;
+        }
+
+        .visitor-counter {
+            background: #000;
+            color: #ff0000;
+            padding: 2px 5px;
+            font-family: "Courier New", Courier, monospace;
+            border: 1px solid #808080;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>YouTube PWA Installer</h1>
+    </header>
+
+    <!-- 懐かしのマーキー風（CSSアニメーションなしの静止版ですが雰囲気重視） -->
+    <div class="marquee-box">
+        <marquee>★★★ YouTube プロファイルをインストールして、ホーム画面に追加しよう！ ★★★</marquee>
+    </div>
+
+    <div class="description">
+        <p>下のボタンを押すと、iOS/iPadOS 用の構成プロファイル（youtube.mobileconfig）をダウンロードします。</p>
+        <p><b>【注意】</b> ダウンロード後、設定アプリからプロファイルをインストールしてください。</p>
+    </div>
+
+    <div style="text-align: center;">
+        <!-- GitHub Pagesのルートにあるファイルを指定 -->
+        <a href="./youtube.mobileconfig" class="install-button" download>
+            YouTubeをインストール
+        </a>
+    </div>
+
+    <div class="footer">
+        <p>あなたは <span class="visitor-counter">000042</span> 人目の訪問者です</p>
+        <p>Copyright (C) 2004 WebMaster. All Rights Reserved.</p>
+        <p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5bcKjGCMyxd4BZVB_lduFPsWd5CuYcr3hkrvttm4Tcw&s=10" alt="Banner"></p>
+    </div>
+</div>
+
+</body>
+</html>
+
